@@ -11,7 +11,12 @@ public class App {
 
         Carro carr = new Carro("KMZ-0934", 123456);
         Motorista mot = new Motorista(carr);
+
+        System.out.println("Passageiro: Motorista, vamos acelerar até a 100!");
+        System.out.println("Motorista: Ok. Vamos lá!");
         mot.acelerar(100);
+
+        System.out.printf("Velocidade do carro: %s km/h", carr.getVelocidadeAtual());
         sc.close();
     }
 }

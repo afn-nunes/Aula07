@@ -35,7 +35,5 @@
             this.acelerar();
         }
     }
-
-  
     
 }

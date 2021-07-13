@@ -33,9 +33,15 @@ public class Motorista {
         this.veiculoAtual = veiculoAtual;
     }
 
+    public Motorista(String nome, int matricula, Carro veiculoAtual) {
+        this.nome = nome;
+        this.matricula = matricula;
+        this.veiculoAtual = veiculoAtual;
+    }
+    
     @Override
     public String toString(){
         return "qualquer coisa";
-    }
+    }    
     
 }
