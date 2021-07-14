@@ -18,10 +18,6 @@ public class Motorista {
         this.matricula = matricula;
     }
 
-    public Motorista(Carro carro){
-        this.veiculoAtual = carro;
-    }
-
     public void acelerar(int limite){
         veiculoAtual.acelerar(limite);
     }
@@ -33,10 +29,13 @@ public class Motorista {
         this.veiculoAtual = veiculoAtual;
     }
 
-    public Motorista(String nome, int matricula, Carro veiculoAtual) {
+    public Motorista(String nome, int matricula) {
         this.nome = nome;
         this.matricula = matricula;
-        this.veiculoAtual = veiculoAtual;
+    }
+
+    public Motorista(Carro carro){
+        this.veiculoAtual = carro;
     }
     
     @Override

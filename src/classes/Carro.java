@@ -4,6 +4,15 @@
     private String placa;
     private int numChassi;
     private int velocidadeAtual;
+    private Motorista motorista;
+
+    public Motorista getMotorista(){
+        return this.motorista;
+    }
+
+    public void setMotorista(Motorista motorista){
+        this.motorista = motorista;
+    }
 
     public String getPlaca() {
         return placa;
@@ -21,9 +30,11 @@
         return velocidadeAtual;
     }
 
-    public Carro(String placa, int numChassi) {
-        this.placa = placa;
-        this.numChassi = numChassi;
+    public Carro(String placa, int numChassi, Motorista piloto) {
+        setPlaca(placa);                
+        setNumChassi(numChassi);
+        setMotorista(piloto);
+        getMotorista().setVeiculoAtual(this);
     }
 
     void acelerar(){
